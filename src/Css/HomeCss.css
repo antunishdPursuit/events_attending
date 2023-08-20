@@ -1,0 +1,14 @@
+.image-box {
+    background-color: lightblue;
+    word-wrap: break-word;
+}
+
+.middle-box{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-style:dashed;
+}
+
+.bottom-box{
+    margin-bottom: 20px;
+}

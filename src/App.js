@@ -20,10 +20,10 @@ function App() {
         <main>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/bookmarks" element={<Index />} />
-            <Route path="/bookmarks/new" element={<New />} />
-            <Route exact path="/bookmarks/:id" element={<Show />} />
-            <Route path="/bookmarks/:id/edit" element={<Edit />} />
+            <Route path="/users" element={<Index />} />
+            <Route path="/users/new" element={<New />} />
+            <Route exact path="/users/:id" element={<Show />} />
+            <Route path="/users/:id/edit" element={<Edit />} />
             <Route path="*" element={<Error />} />
           </Routes>
         </main>
