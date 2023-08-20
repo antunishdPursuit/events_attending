@@ -1,0 +1,16 @@
+.card-box{
+    padding: 0px;
+    margin: 0px;
+    width: 225px;
+    word-wrap: break-word;
+}
+
+.inner-Card{
+    margin: auto;
+    padding: auto;
+}
+
+.image-box{
+    width: 125px;
+    height: 125px;
+}
