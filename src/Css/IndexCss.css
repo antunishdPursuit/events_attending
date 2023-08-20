@@ -1,0 +1,18 @@
+.user-box{
+    height: 100px;
+    background-color: aliceblue;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.card-box{
+    margin: 5px;
+}
+
+.sort-box{
+    border-style: dashed;
+}
+
+.sort-box-2{
+    margin-top: 100px;
+}
