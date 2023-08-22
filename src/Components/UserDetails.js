@@ -9,7 +9,6 @@ const API = process.env.REACT_APP_API_URL;
 
 function UserDetails() {
     const [user, setUser] = useState([]);
-    const [events, setEvents] = useState([]);
     let navigate = useNavigate();
     let { id } = useParams();
  
@@ -39,11 +38,7 @@ function UserDetails() {
       .catch((c) => console.warn("catch", c));
   };
 
-  useEffect(() => {
-    axios.get(`${API}/users/${id}/events`).then((response) => {
-      setEvents(response.data);
-    });
-  }, [id]);
+
 
 
 
@@ -52,7 +47,7 @@ function UserDetails() {
       <div className="col-md-5">
           <div className="card mb-3 col-md-5ol-4">
               <UserCard user={user} id={id} handleDelete={handleDelete}/>
-              <Events events={events}/>
+              <Events/>
           </div>
       </div>
       <div className="col-md-7">

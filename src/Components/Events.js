@@ -6,9 +6,15 @@ import Event from "./Event";
 
 const API = process.env.REACT_APP_API_URL;
 
-function Events({events}) {
+function Events() {
   let { id } = useParams();
+  const [events, setEvents] = useState([]);
 
+  useEffect(() => {
+    axios.get(`${API}/users/${id}/events`).then((response) => {
+      setEvents(response.data);
+    });
+  }, [id]);
 
   const handleDelete = (id) => {
     axios
@@ -17,10 +23,10 @@ function Events({events}) {
         (response) => {
           const copyEventArray = [...events];
           const indexDeletedEvent = copyEventArray.findIndex((event) => {
-            // return event.id === id;
+            return event.id === id;
           });
           copyEventArray.splice(indexDeletedEvent, 1);
-        //   setEvents(copyEventArray);
+          setEvents(copyEventArray);
         },
         (error) => console.error(error)
       )
