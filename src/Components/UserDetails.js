@@ -9,6 +9,7 @@ const API = process.env.REACT_APP_API_URL;
 
 function UserDetails() {
     const [user, setUser] = useState([]);
+    const [newEventToAdd, setNewEventToAdd] = useState({})
     let navigate = useNavigate();
     let { id } = useParams();
  
@@ -38,16 +39,20 @@ function UserDetails() {
       .catch((c) => console.warn("catch", c));
   };
 
+  function handleAddEvents(event) {
+    setNewEventToAdd(event)
+}
+
   return (
-    <div className="row">
-      <div className="col-md-5">
-          <div className="card mb-3 col-md-5ol-4">
-              <UserCard user={user} id={id} handleDelete={handleDelete}/>
-              <Events/>
-          </div>
+    <div className="d-flex">
+      <div className="flex-grow-1">
+        <div className="card mb-3">
+          <UserCard user={user} id={id} handleDelete={handleDelete} />
+          <Events newEventToAdd={newEventToAdd} />
+        </div>
       </div>
-      <div className="col-md-7">
-        {/* <EventSearch user={user}/> */}
+      <div className="d-flex flex-column justify-content-between">
+        <EventSearch user={user} handleAddEvents={handleAddEvents} />
       </div>
     </div>
   );

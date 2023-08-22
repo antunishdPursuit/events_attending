@@ -2,7 +2,7 @@ import UserDetails from "../Components/UserDetails";
 
 function Show() {
     return (
-        <div className="container">
+        <div>
             <br></br>
             <UserDetails />
         </div>

@@ -12,15 +12,21 @@ function User({ event, handleDelete, toggleView }) {
     <div className="card">
         <div className="card-body">
             <div className="d-flex align-items-center">
-                {selectedImage && <img onError={addDefaultSrc} src={selectedImage} alt="Preview" className="img-fluid rounded event-card" />}
+                {selectedImage && 
+                <img 
+                alt="Preview" 
+                src={selectedImage} 
+                onError={addDefaultSrc} 
+                className="img-fluid rounded event-card" 
+                />}
                 <h4 className="card-title ms-3"> {event.artist}</h4>
             </div>
             <div className="d-flex flex-column">
                 <h5 className="card-subtitle">In {event.city} at {event.venue}</h5>
                 <p className="card-text">Min Price: ${event.price}</p>
             </div>
-                <button className="btn btn-primary" onClick={toggleView}>Edit</button>
-                <button className="btn btn-danger" onClick={() => handleDelete(event.id)}>Delete</button>
+            <button className="btn btn-primary" onClick={toggleView}>Edit</button>
+            <button className="btn btn-danger" onClick={() => handleDelete(event.id)}>Delete</button>
         </div>
     </div>
   );

@@ -10,19 +10,23 @@ function Event({ event, handleDelete, handleSubmit, handleAdd }) {
    
     return (
         <div className="Event">
-            {
-                viewEditForm ? (
-                    <EventForm
-                    eventDetails={event}
-                    toggleView={toggleView}
-                    handleSubmit={handleSubmit}
+            {viewEditForm ? (
+                <EventForm
+                eventDetails={event}
+                toggleView={toggleView}
+                handleSubmit={handleSubmit}
                 />
-                ) : (
-                    <EventCard event={event} handleDelete={handleDelete} handleAdd={handleAdd} toggleView={toggleView}/>
-                )
+            ) : (
+                <EventCard 
+                event={event} 
+                handleDelete={handleDelete} 
+                handleAdd={handleAdd} 
+                toggleView={toggleView}
+                />
+            )
             }
         </div>
     );
-  }
-  
-  export default Event;
+}
+
+export default Event;
