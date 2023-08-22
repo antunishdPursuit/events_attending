@@ -1,13 +1,18 @@
 .home-box {
-    background-color: lightblue;
+    border-radius: 80%;  
+    background: rgb(54,55,50);
+    background: -moz-linear-gradient(90deg, rgba(54,55,50,1) 0%, rgba(83,216,251,1) 0%, rgba(102,195,255,1) 100%, rgba(220,225,233,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(54,55,50,1) 0%, rgba(83,216,251,1) 0%, rgba(102,195,255,1) 100%, rgba(220,225,233,1) 100%);
+    background: linear-gradient(90deg, rgba(54,55,50,1) 0%, rgba(83,216,251,1) 0%, rgba(102,195,255,1) 100%, rgba(220,225,233,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#363732",endColorstr="#dce1e9",GradientType=1);
 }
 
 .middle-box{
     margin-top: 15px;
     margin-bottom: 15px;
-    border-style:dashed;
 }
 
 .bottom-box{
     margin-bottom: 20px;
 }
+

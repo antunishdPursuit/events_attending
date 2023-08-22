@@ -1,4 +1,4 @@
-import "../Css/EventCardCss.css"
+import "../../Css/EventCardCss.css"
 import { useState } from "react";
 
 function User({ event, handleDelete, toggleView }) {

@@ -1,6 +1,6 @@
-import "../Css/EventCardCss.css"
+import "../../Css/EventCardCss.css"
 import axios from "axios";
-import EventSearchDetails from "./EventSearchDetails";
+import EventSearchDetails from "../Events/EventSearchDetails";
 import { useEffect, useState } from "react";
 const API = process.env.REACT_APP_API_KEY;
 

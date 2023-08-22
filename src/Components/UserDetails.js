@@ -1,8 +1,8 @@
 import "../Css/UserDetailsCss.css"
 import axios from "axios";
 import UserCard from "./UserCard";
-import Events from "./Events";
-import EventSearch from "./EventSearch"
+import Events from "./Events/Events";
+import EventSearch from "./Events/EventSearch"
 import { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 const API = process.env.REACT_APP_API_URL;

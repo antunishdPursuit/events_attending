@@ -17,7 +17,7 @@ export default function NavBar() {
                         <Link className="nav-link" to="/users/new">New User</Link>
                     </li>
                     <li className="nav-item">
-                        <Link className="nav-link" to="#">About</Link>
+                        <Link className="nav-link" to="/About">About</Link>
                     </li>
                 </ul>
             </div>

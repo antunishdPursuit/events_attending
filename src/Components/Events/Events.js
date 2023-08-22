@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { useParams } from "react-router-dom";
-import Event from "./Event";
+import Event from "../Events/Event";
 
 const API = process.env.REACT_APP_API_URL;
 

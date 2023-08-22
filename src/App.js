@@ -10,7 +10,8 @@ import New from "./Pages/New";
 import Show from "./Pages/Show";
 
 // COMPONENTS
-import NavBar from "./Components/NavBar";
+import NavBar from "./Components/Organization/NavBar";
+import About from "./Components/Organization/About"
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
             <Route path="/users/new" element={<New />} />
             <Route exact path="/users/:id" element={<Show />} />
             <Route path="/users/:id/edit" element={<Edit />} />
+            <Route path="/about" element={<About/>} />
             <Route path="*" element={<Error />} />
           </Routes>
         </main>
