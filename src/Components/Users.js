@@ -8,7 +8,7 @@ function Users() {
     const [users, setUsers] = useState([]);
     const [selectedOption, setSelectedOption] = useState('date');
     const [sortDirection, setSortDirection] = useState('asc'); // Default to ascending
-
+    
     // Gathering the data from the backend
     useEffect(() => {
         axios
