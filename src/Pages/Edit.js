@@ -1,10 +1,10 @@
-// import UserEditForm from "../Components/UserEditForm";
+import UserEditForm from "../Components/UserEditForm";
 
 function Edit() {
     return (
         <div>
-            <h2>Edit Page</h2>
-            {/* <UserEditForm /> */}
+            {/* <h2>Edit Page</h2> */}
+            <UserEditForm />
         </div>
     );
 }

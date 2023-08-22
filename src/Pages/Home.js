@@ -42,9 +42,8 @@ function Home() {
 
     return (
         <div className="container text-center">
-
             <div className="row">
-                <div className="col image-box">
+                <div className="col home-box">
                     <h3>Welcome to EventPlanner!
                         <br></br>
                         EventPlanner is your go-to platform for discovering and organizing your favorite events. 

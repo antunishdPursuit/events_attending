@@ -1,16 +1,7 @@
 import { Link } from "react-router-dom";
-// import "../Css/NavBarCss.css"
 export default function NavBar() {
     
   return (
-    // <nav>
-    //     <h1>
-    //         <Link to="/users">Users</Link>
-    //     </h1>
-    //     <button>
-    //         <Link to="/users/new">New User</Link>
-    //     </button>
-    // </nav>
     <nav className="navbar navbar-expand-sm bg-body-tertiary">
         <div className="container-fluid">
             <Link className="navbar-brand" to="/">Home</Link>
