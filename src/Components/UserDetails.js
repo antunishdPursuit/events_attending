@@ -38,10 +38,6 @@ function UserDetails() {
       .catch((c) => console.warn("catch", c));
   };
 
-
-
-
-
   return (
     <div className="row">
       <div className="col-md-5">

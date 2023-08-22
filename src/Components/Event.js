@@ -12,12 +12,11 @@ function Event({ event, handleDelete, handleSubmit, handleAdd }) {
         <div className="Event">
             {
                 viewEditForm ? (
-                    <h1>test</h1>
-                //     <EventForm
-                //     eventDetails={event}
-                //     toggleView={toggleView}
-                //     handleSubmit={handleSubmit}
-                // />
+                    <EventForm
+                    eventDetails={event}
+                    toggleView={toggleView}
+                    handleSubmit={handleSubmit}
+                />
                 ) : (
                     <EventCard event={event} handleDelete={handleDelete} handleAdd={handleAdd} toggleView={toggleView}/>
                 )

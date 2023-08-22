@@ -39,10 +39,10 @@ function Events() {
       .then((response) => {
         const copyEventArray = [...events];
         const indexUpdatedEvent = copyEventArray.findIndex((user) => {
-        //   return user.id === updatedEvent.id;
+          return user.id === updatedEvent.id;
         });
         copyEventArray[indexUpdatedEvent] = response.data;
-        // setEvents(copyEventArray);
+        setEvents(copyEventArray);
       })
       .catch((c) => console.warn("catch", c));
   };
@@ -50,9 +50,6 @@ function Events() {
     return (
     <section className="Events">
         <h2>Events</h2>
-            {/* <EventForm handleSubmit={handleAdd}> */}
-        <h3>Add a New Event</h3>
-            {/* </EventForm> */}
         {events.map((event) => (
             <Event
             key={event.id}
