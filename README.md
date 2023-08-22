@@ -2,7 +2,7 @@
 
 ## Deployed on Netlify
 Check out the live version of the FrontEnd deployed on Netlify:  
-[**Netlify App**](https://64e47f68ff62c6000898572c--jade-cuchufli-c759ae.netlify.app/)
+[**Netlify App**](https://jade-cuchufli-c759ae.netlify.app/)
 
 ## GitHub Repository
 Explore the FrontEnd's source code and contribute on GitHub:  
