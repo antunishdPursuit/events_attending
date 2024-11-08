@@ -33,44 +33,41 @@ function EventSearchDetails( {event, user, handleAddEvents}) {
     };
 
   return (
-<div className="card-body">
-  <div className="row align-items-center">
-    <div className="col-md-3">
-      <img src={event.images[7].url} alt={`Event ${event.id}`} className="event-search-box" />
-    </div>
-    <div className="col-md-7">
-      <h4 className="card-title fs-5">{event.name}</h4>
-      <h5 className="card-subtitle fs-6">
-        In {event._embedded.venues[0].city.name},{event._embedded.venues[0].state.stateCode} at {event._embedded.venues[0].name}
-      </h5>
-      <h5 className="fs-6">Event Date: {event.dates.start.localDate}</h5>
-    </div>
-    <div className="col-md-2">
-      {typeof event.priceRanges === "undefined" ? (
-        <div className="d-flex flex-column align-items-center">
-          <Link to={event.url} className="fs-6 mb-2">Check Price</Link>
-          {!isEventAdded ? (
-            <button className="btn btn-success btn-sm" onClick={handleAdd}>Add</button>
+    <div className="card-body">
+      <div className="row align-items-center">
+        <div className="col-md-3">
+          <img src={event.images[7].url} alt={`Event ${event.id}`} className="event-search-box" />
+        </div>
+        <div className="col-md-7">
+          <h4 className="card-title fs-5">{event.name}</h4>
+          <h5 className="card-subtitle fs-6">
+            In {event._embedded.venues[0].city.name},{event._embedded.venues[0].state.stateCode} at {event._embedded.venues[0].name}
+          </h5>
+          <h5 className="fs-6">Event Date: {event.dates.start.localDate}</h5>
+        </div>
+        <div className="col-md-2">
+          {typeof event.priceRanges === "undefined" ? (
+            <div className="d-flex flex-column align-items-center">
+              <Link to={event.url} className="fs-6 mb-2">Check Price</Link>
+              {!isEventAdded ? (
+                <button className="btn btn-success btn-sm" onClick={handleAdd}>Add</button>
+              ) : (
+                <p className="fs-6">Event added!</p>
+              )}
+            </div>
           ) : (
-            <p className="fs-6">Event added!</p>
+            <div className="d-flex flex-column align-items-center">
+              <Link to={event.url} className="fs-6 mb-2">Tickets:<br/> ${event.priceRanges[0].min} - ${event.priceRanges[0].max}</Link>
+              {!isEventAdded ? (
+                <button className="btn btn-success btn-sm" onClick={handleAdd}>Add</button>
+              ) : (
+                <p className="fs-6">Event added!</p>
+              )}
+            </div>
           )}
         </div>
-      ) : (
-        <div className="d-flex flex-column align-items-center">
-          <Link to={event.url} className="fs-6 mb-2">Tickets: ${event.priceRanges[0].min} - ${event.priceRanges[0].max}</Link>
-          {!isEventAdded ? (
-            <button className="btn btn-success btn-sm" onClick={handleAdd}>Add</button>
-          ) : (
-            <p className="fs-6">Event added!</p>
-          )}
-        </div>
-      )}
+      </div>
     </div>
-  </div>
-</div>
-
-
-
   );
 }
 
