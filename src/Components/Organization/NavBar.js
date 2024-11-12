@@ -5,10 +5,10 @@ export default function NavBar() {
   return (
     <nav>
         <div className="logo">
-            Logo
+            
         </div>
         <div className="nav-center">
-            <Link to="/"></Link>
+            <Link to="/">EventLink</Link>
         </div>
         <div className="" id="navbarNav">
             <ul className="nav-right">

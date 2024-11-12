@@ -12,7 +12,7 @@ import Show from "./Pages/Show";
 // COMPONENTS
 import NavBar from "./Components/Organization/NavBar";
 import About from "./Components/Organization/About"
-
+import Footer from "./Components/Organization/Footer";
 function App() {
   return (
     <div className="App">
@@ -29,6 +29,7 @@ function App() {
             <Route path="*" element={<Error />} />
           </Routes>
         </main>
+        <Footer />
       </Router>
     </div>
   );

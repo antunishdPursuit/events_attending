@@ -7,6 +7,7 @@ nav {
   width: 100%; 
   box-sizing: border-box;
 }
+
 nav .logo {
   font-size: 1.5rem;
   font-weight: bold;
@@ -17,6 +18,7 @@ nav .logo {
 nav .nav-center {
   text-align: center;
 }
+
 nav .nav-center a {
   color: var(--neutral-white);
   font-size: 1.5rem;
@@ -31,6 +33,7 @@ nav .nav-right {
   margin: 0;
   padding: 0;
 }
+
 nav .nav-right li {
   display: inline; 
 }

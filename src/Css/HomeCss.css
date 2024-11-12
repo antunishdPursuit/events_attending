@@ -15,6 +15,8 @@
     justify-content: space-around;
     height: 100%;
     cursor: default;
+    background-image:url(https://images.unsplash.com/photo-1546707012-0c9f63ba29b9?q=80&w=2938&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-position: center;
     text-shadow: 4px 4px 8px var(--secondary-soft-purple);
 }
 .home_features{
@@ -91,7 +93,7 @@
     width: 300px; 
     height: 300px; 
     border-radius: 50%;
-    background: linear-gradient(45deg, rgb(240, 240, 240), rgba(209, 232, 255, 0.1)); 
+    background: linear-gradient(45deg, rgb(240, 240, 240), rgba(209, 232, 255, 0.8)); 
     padding: 10px; 
     background-clip: border-box; 
     background-origin: border-box;
