@@ -10,6 +10,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+* {
+  color: var(--neutral-charcoal-gray); /* Replace with your desired color */
+}
+
+
 :root {
   /* Primary Colors */
   --primary-deep-blue: #1E3A8A;
@@ -28,3 +33,12 @@ body {
   --neutral-soft-gray: #F0F0F0;
   --neutral-charcoal-gray: #333333;
 }
+/* Header and Navigation: Use Deep Blue (#1E3A8A) with White (#FFFFFF) text for a clear, crisp header.
+
+Buttons and Links: Use Bright Cyan (#00BFFF) with hover effects in Vibrant Pink (#FF4F81) to keep interactive elements noticeable.
+
+Backgrounds: Use Light Blue (#D1E8FF) for the main background and Soft Gray (#F0F0F0) for secondary sections.
+
+Highlights: Use Soft Purple (#A29BFE) for highlights to create a sense of cohesion with Warm Yellow (#FFD700) for celebratory touches.
+
+User Profile and Event Cards: Incorporate White (#FFFFFF) with Charcoal Gray (#333333) text, bordered by Deep Blue (#1E3A8A) or Soft Purple (#A29BFE) for subtle contrast. */

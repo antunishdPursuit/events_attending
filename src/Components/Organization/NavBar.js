@@ -8,7 +8,7 @@ export default function NavBar() {
             Logo
         </div>
         <div className="nav-center">
-            <Link to="/">EventLink</Link>
+            <Link to="/"></Link>
         </div>
         <div className="" id="navbarNav">
             <ul className="nav-right">
