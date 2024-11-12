@@ -59,7 +59,7 @@ function Home() {
                 <div className="home_banner_right_box">
                     {isLoading ? 
                         <div className="home_banner_right_box_loading">
-                            Loading...
+                            <p> Loading...</p>
                         </div> 
                         : 
                         users && (
@@ -79,16 +79,16 @@ function Home() {
             </div>
             <div className="home_features">
                 <div className="home_features_box">
-                    <h3>Create Your Personal Event List:</h3>
+                    <h3>Personal Event List</h3>
                     <p>Found an event you can't miss? Add it to your personalized event list with just a click. Our user-friendly interface lets you manage your event schedule effortlessly, so you'll never miss out on the experiences you love.</p>
                 </div>
                 <div className="home_features_box">
-                    <h3>Discover Exciting Events:</h3>
+                    <h3>Discover Exciting Events</h3>
                     <p>Browse through a diverse range of events happening in your city and beyond. From concerts by international artists to local art exhibitions and sports tournaments, you'll find events that cater to every interest.</p>
                 </div>
                 <div className="home_features_box">
-                    <h3>Discover Exciting Events:</h3>
-                    <p>Browse through a diverse range of events happening in your city and beyond. From concerts by international artists to local art exhibitions and sports tournaments, you'll find events that cater to every interest.</p>
+                    <h3>Fellow Music Lovers</h3>
+                    <p>Enhance your concert experience by connecting with other music enthusiasts attending the same events. Share your excitement with others and plan meet-ups to make every concert a memorable and shared experience.</p>
                 </div>
             </div>
         </div>

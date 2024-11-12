@@ -1,4 +1,5 @@
 /* ---------------------- Home Banner Styling ---------------------- */
+
 .home_container{
     display: flex;
     flex-direction: column;
@@ -130,11 +131,43 @@
 }
 
 .home_banner_right_box_button button:hover {
-    background-color: var(--complementary-vibrant-pink); 
+    background-color: var(--primary-bright-cyan); 
     color: white;
 }
 
+.home_banner_right_box_loading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px; 
+    height: 300px; 
+    border-radius: 50%;
+    background: linear-gradient(90deg, #1E3A8A, rgba(209, 232, 255));
+    padding: 10px; 
+    background-size: 200% 200%;
+    background-clip: border-box; 
+    background-origin: border-box;
+    animation: moveGradient 3s ease-in-out infinite;
+}
+.home_banner_right_box_loading p{
+    font-size: 3em;
+    text-shadow: 2px 2px 4px var(--secondary-light-blue);
+}
+
+@keyframes moveGradient {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 0%;
+    }
+    100% {
+        background-position: 0% 0%; 
+    }
+}
+
 /* ---------------------- Home features Styling ---------------------- */
+
 .home_features{
     display: flex;
     flex-direction: row;
@@ -146,13 +179,13 @@
 .home_features_box{
     padding-right: 20px;
     padding-left: 5px;
+    flex: 1;
     text-align: center;
     border-right: 2px solid var(--secondary-light-blue);
 }
 
-
 .home_features_box:hover{
-    border-left: 2px solid var(--secondary-light-blue);
     border-right: none;
-    text-shadow: 2px 2px 4px var(--secondary-soft-purple);
+    border-left: 2px solid var(--secondary-light-blue);
+    text-shadow: 1px 1px 4px var(--secondary-soft-purple);
 }
