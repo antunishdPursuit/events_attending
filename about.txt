@@ -1,0 +1,6 @@
+This favicon was generated using the following font:
+
+- Font Title: Noticia Text
+- Font Author: Copyright (c) 2011 JM Sole (info@jmsole.cl), with Reserved Font Name "Noticia Text".
+- Font Source: http://fonts.gstatic.com/s/noticiatext/v15/VuJodNDF2Yv9qppOePKYRP12YztdlU_dpSjt.ttf
+- Font License: SIL Open Font License, 1.1 (http://scripts.sil.org/OFL))
